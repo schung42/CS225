@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp14-cs225/!svn/ver/40344/_shared/lab_dict_provided
+END
+anagram_dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/anagram_dict.h
+END
+game.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/game.h
+END
+cartalk_puzzle.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/cartalk_puzzle.h
+END
+pronounce_dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/pronounce_dict.h
+END
+unit_tests.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sp14-cs225/!svn/ver/40344/_shared/lab_dict_provided/unit_tests.cpp
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/config.ini
+END
+fib.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/fib.h
+END
+homophone_puzzle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/homophone_puzzle.cpp
+END
+homophone_puzzle.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/homophone_puzzle.h
+END
+words.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/words.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/Makefile
+END
+cartalk_words.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sp14-cs225/!svn/ver/34883/_shared/lab_dict_provided/cartalk_words.txt
+END

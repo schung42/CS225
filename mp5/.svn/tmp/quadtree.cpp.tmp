@@ -1,0 +1,150 @@
+// **************************************************************
+// *		   
+// *  quadtree.cpp
+// *		   
+// *  Quadtree class
+// *		   
+// *  CS 225 Spring 2008
+// *		   
+// **************************************************************
+
+#include "quadtree.h"
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+using namespace std
+
+<<<<<<< .mine
+Quadtree::Quadtree()
+
+
+=======
+Quadtree::Quadtree()
+{
+	root = NULL;
+}
+
+//buildtree
+Quadtree::Quadtree(const PNG & source, int resolution)
+{
+	buildTree(source, resolution);
+}
+
+//copy
+Quadtree::Quadtree(Quadtree const  & other)
+{
+	root = copy(other.root);
+}
+
+//copy helper function
+Quadtree::QuadtreeNode* Quadtree::copy(QuadtreeNode* copiedRoot)
+{
+	if(copiedRoot == NULL)
+	{
+		return NULL;
+	}
+		QuadtreeNode* val = new QuadtreeNode;
+		val->nwChild = copy(copiedRoot->nwChild);
+		val->neChild = copy(copiedRoot->neChild);
+		val->swChild = copy(copiedRoot->swChild);
+		val->seChild = copy(copiedRoot->seChild);
+		return val;
+}
+
+//destructor
+Quadtree::~Quadtree()
+{
+	clearTree(root);
+}
+
+void Quadtree::clearTree(QuadtreeNode* & subRoot)
+{
+	if(subRoot == NULL)
+	{
+		return;
+	}
+
+	clearTree(subRoot->nwChild);
+	clearTree(subRoot->neChild);
+	clearTree(subRoot->swChild);
+	clearTree(subRoot->seChild);
+
+	delete subRoot;
+	subRoot = NULL;
+}
+
+Quadtree const & Quadtree::operator= (Quadtree const &other)
+{
+	if(this == &other)
+	{
+		return *this;
+	}
+	else
+	{
+		clearTree(root);
+		root = copy(other.root);
+	}
+}
+
+void Quadtree::buildTree(PNG const & source, int resolution)
+{
+	
+	buildTreeHelper(source, root, 0,0,resolution);
+}
+
+void Quadtree::buildTreeHelper(PNG const & source, QuadtreeNode* subRoot, int x, int y, int resolution)
+{
+	if(resolution == 1)
+	{
+		subRoot->element = *source(x,y);
+		return;
+	}
+	buildTreeHelper(source, subRoot->nwChild, x,y, resolution/2);
+	buildTreeHelper(source, subRoot->neChild, x+resolution/2,y, resolution/2);
+	buildTreeHelper(source, subRoot->swChild, x,y+resolution/2, resolution/2);
+	buildTreeHelper(source, subRoot->seChild, x+resolution/2,y+resolution/2, resolution/2);
+
+	subRoot->element.red = (subRoot->nwChild->element.red + subRoot->neChild->element.red + subRoot->swChild->element.red + subRoot->seChild->element.red)/4;
+	subRoot->element.green = (subRoot->nwChild->element.green + subRoot->neChild->element.green + subRoot->swChild->element.green + subRoot->seChild->element.green)/4;
+	subRoot->element.blue = (subRoot->nwChild->element.blue + subRoot->neChild->element.blue + subRoot->swChild->element.blue + subRoot->seChild->element.blue)/4;
+
+}
+
+RGBAPixel Quadtree:: getPixel(int x, int y) const
+{
+	return getPixelHelper(root, x, y);
+}
+
+RGBAPixel Quadtree::getPixelHelper(QuadtreeNode* subRoot, int x, int y) const
+{
+	if((subRoot->x == x && subRoot->y==y && subRoot->res == 1) || (subRoot->nwChild == NULL))
+    {
+        return subRoot->element;
+    }
+    
+	else if(x >= subRoot->nwChild->x && x < (subRoot->nwChild->x + subRoot->nwChild->res) && y >= subRoot->nwChild->y && y < (subRoot->nwChild->y + subRoot->nwChild->res))
+    {
+        return getPixelHelper(x,y,subNode->nwChild);
+    }
+    
+	else if(x >= subRoot->neChild->x && x < (subRoot->neChild->x + subRoot->neChild->res) && y >= subRoot->neChild->y && y < (subRoot->neChild->y + subRoot->neChild->res))
+    {
+        return getPixelHelper(x,y,subNode->neChild);
+    }
+    
+	else if(x >= subRoot->swChild->x && x < (subRoot->swChild->x + subRoot->swChild->res) && y >= subRoot->swChild->y && y < (subRoot->swChild->y + subRoot->swChild->res))
+    {
+        return getPixelHelper(x,y,subNode->swChild);
+    }
+    
+	else if(x >= subRoot->seChild->x && x < (subRoot->seChild->x + subRoot->seChild->res) && y >= subRoot->seChild->y && y < (subRoot->seChild->y + subRoot->seChild->res))
+    {
+        return getPixelHelper(x,y,subNode->seChild);
+    }
+    
+    else return subRoot->element;
+}
+
+
+>>>>>>> .r42305

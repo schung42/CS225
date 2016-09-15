@@ -1,0 +1,76 @@
+Monad Autograder
+Testing mp3 at 2014-02-27 02:43:22
+
+"This is 5 probability." ~ Jack Toole
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testInsertFront  . . . . . . . . . . [2 pts]  - FAILED
+testInsertBack . . . . . . . . . . . [2 pts]  - FAILED
+testDestructor10 (valgrind)  . . . . [3 pts]  - FAILED
+testDestructor37 (valgrind)  . . . . [3 pts]  - FAILED
+testReverse20_size . . . . . . . . . [1 pts]  - FAILED
+testReverse20_forward  . . . . . . . [1 pts]  - FAILED
+testReverse20_backward . . . . . . . [1 pts]  - FAILED
+testReverse37_size . . . . . . . . . [1 pts]  - FAILED
+testReverse37_forward  . . . . . . . [1 pts]  - FAILED
+testReverse37_backward . . . . . . . [1 pts]  - FAILED
+testReverseEmpty (valgrind)  . . . . [1 pts]  - FAILED
+testReverse20_memory (valgrind)  . . [1 pts]  - FAILED
+testReverseNth20_2_size  . . . . . . [1 pts]  - FAILED
+testReverseNth20_2_forward . . . . . [1 pts]  - FAILED
+testReverseNth20_2_backward  . . . . [1 pts]  - FAILED
+testReverseNth37_4_size  . . . . . . [1 pts]  - FAILED
+testReverseNth37_4_forward . . . . . [1 pts]  - FAILED
+testReverseNth37_4_backward  . . . . [1 pts]  - FAILED
+testReverseNth37_37  . . . . . . . . [1 pts]  - FAILED
+testReverseNth37_4_memory (valgrind) [1 pts]  - FAILED
+testReverseNthEmpty (valgrind) . . . [1 pts]  - FAILED
+testWaterfall4_size  . . . . . . . . [1 pts]  - FAILED
+testWaterfall4_forward . . . . . . . [1 pts]  - FAILED
+testWaterfall4_backward  . . . . . . [2 pts]  - FAILED
+testWaterfall7_size  . . . . . . . . [1 pts]  - FAILED
+testWaterfall7_forward . . . . . . . [1 pts]  - FAILED
+testWaterfall7_backward  . . . . . . [2 pts]  - FAILED
+testWaterfall12_size . . . . . . . . [1 pts]  - FAILED
+testWaterfall12_forward  . . . . . . [1 pts]  - FAILED
+testWaterfall12_backward . . . . . . [2 pts]  - FAILED
+testWaterfall7_memory (valgrind) . . [3 pts]  - FAILED
+testWaterfall7_empty (valgrind)  . . [3 pts]  - FAILED
+testSplit5_this_size . . . . . . . . [1 pts]  - FAILED
+testSplit5_this_forward  . . . . . . [1 pts]  - FAILED
+testSplit5_this_backward . . . . . . [1 pts]  - FAILED
+testSplit5_split_size  . . . . . . . [1 pts]  - FAILED
+testSplit5_split_forward . . . . . . [1 pts]  - FAILED
+testSplit5_split_backward  . . . . . [1 pts]  - FAILED
+testSplit5_mem (valgrind)  . . . . . [3 pts]  - FAILED
+testMerge_size . . . . . . . . . . . [1 pts]  - FAILED
+testMerge_forward  . . . . . . . . . [1 pts]  - FAILED
+testMerge_backward . . . . . . . . . [1 pts]  - FAILED
+testMerge_mem (valgrind) . . . . . . [3 pts]  - FAILED
+testSort16p_s  . . . . . . . . . . . [1 pts]  - FAILED
+testSort16p_f  . . . . . . . . . . . [2 pts]  - FAILED
+testSort16p_b  . . . . . . . . . . . [2 pts]  - FAILED
+testSort20p_s  . . . . . . . . . . . [1 pts]  - FAILED
+testSort20p_f  . . . . . . . . . . . [2 pts]  - FAILED
+testSort20p_b  . . . . . . . . . . . [2 pts]  - FAILED
+testSort27p_s  . . . . . . . . . . . [1 pts]  - FAILED
+testSort27p_f  . . . . . . . . . . . [2 pts]  - FAILED
+testSort27p_b  . . . . . . . . . . . [2 pts]  - FAILED
+testSortEmpty  . . . . . . . . . . . [5 pts]  - FAILED
+testSort259p_s . . . . . . . . . . . [1 pts]  - FAILED
+testSort259p_f . . . . . . . . . . . [2 pts]  - FAILED
+testSort259p_b . . . . . . . . . . . [2 pts]  - FAILED
+testSortMemLeak (valgrind) . . . . . [5 pts]  - FAILED
+testSortNlogN  . . . . . . . . . . . [10 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

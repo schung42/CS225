@@ -1,0 +1,181 @@
+Monad Autograder
+Testing mp6.1 at 2014-04-16 01:27:04
+
+"The cheapest, fastest, and most reliable components of a computer system are those that aren't there." ~ Gordon Bell
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+kdtree.cpp: In member function 'bool KDTree<Dim>::shouldReplace(const Point<Dim>&, const Point<Dim>&, const Point<Dim>&) const [with int Dim = 3]':
+unit_tests.cpp:75:   instantiated from here
+kdtree.cpp:35: error: 'shouldReplaceHelper' was not declared in this scope
+kdtree.cpp:39: warning: suggest parentheses around assignment used as truth value
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+kdtree.cpp: In member function 'bool KDTree<Dim>::shouldReplace(const Point<Dim>&, const Point<Dim>&, const Point<Dim>&) const [with int Dim = 3]':
+unit_tests.cpp:75:   instantiated from here
+kdtree.cpp:35: error: 'shouldReplaceHelper' was not declared in this scope
+kdtree.cpp:39: warning: suggest parentheses around assignment used as truth value
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+In file included from unit_tests.cpp:11:
+kdtree.h:244: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.h:244: error: expected ',' or '...' before '<' token
+kdtree.h:244: error: extra qualification 'KDTree<Dim>::' on member 'shouldReplaceHelper'
+kdtree.h:244: error: explicit specialization of 'int KDTree<Dim>::shouldReplaceHelper(int) const' must be introduced by 'template <>'
+In file included from kdtree.h:247,
+                 from unit_tests.cpp:11:
+kdtree.cpp:57: error: ISO C++ forbids declaration of 'point' with no type
+kdtree.cpp:57: error: expected ',' or '...' before '<' token
+kdtree.cpp:57: error: no 'int KDTree<Dim>::shouldReplaceHelper(int) const' member function declared in class 'KDTree<Dim>'
+ld: no input files
+g++: unit_tests.o: No such file or directory
+make: *** [proxy] Error 1
+
+
+exec("./proxy", "--nodetailed") failed: No such file or directory
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

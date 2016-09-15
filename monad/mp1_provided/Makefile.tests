@@ -1,0 +1,2 @@
+TESTOBJS = png.o rgbapixel.o
+include Makefile.proxy

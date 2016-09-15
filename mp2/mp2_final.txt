@@ -1,0 +1,188 @@
+Monad Autograder
+Testing mp2 at 2014-02-12 01:34:41
+
+"I can calculate the motions of the heavenly bodies, but not the madness of people." ~ Isaac Newton
+
+Setting up test environment...
+Compiling...
+================================================================
+../source/cc-monad g++ -c -g -O0 -Wall -Werror testimage.cpp
+../source/cc-monad g++ testimage.o png.o rgbapixel.o image.o -lpng -o testimage
+
+
+Running tests...
+================================================================
+InvertColorsEven . . . . . . . . . . . [8 pts] - FAILED: testimage.cpp:103: Did not match solution
+FlipLeftEven . . . . . . . . . . . . . [5 pts] - passed
+FlipLeftOdd  . . . . . . . . . . . . . [5 pts] - passed
+AdjustBrightnessEven . . . . . . . . . [6 pts] - passed
+AdjustBrightnessEven2  . . . . . . . . [3 pts] - passed
+AdjustBrightnessEven3  . . . . . . . . [3 pts] - passed
+Valgrind1 (valgrind) . . . . . . . . . [5 pts] - FAILED: testscene.cpp:74: Assertion (*theImage == *soln) failed
+AddPictureValidIndex . . . . . . . . . [3 pts] - passed
+AddPictureInvalidIndex . . . . . . . . [2 pts] - passed
+ImageAssignmentOperator  . . . . . . . [2 pts] - passed
+SceneGetPictureInvalidIndex  . . . . . [2 pts] - passed
+SceneChangeMaxLayersLarger . . . . . . [3 pts] - FAILED: Segmentation fault
+SceneChangeMaxLayersSmaller (valgrind) [1 pts] - FAILED: Invalid read/write errors
+SceneChangeMaxLayersInvalidChange  . . [2 pts] - FAILED: testscene.cpp:162: Assertion (*image == *red) failed
+SceneCopyCtor  . . . . . . . . . . . . [3 pts] - passed
+SceneCopyCtor2 . . . . . . . . . . . . [2 pts] - passed
+SceneAssignmentOperator  . . . . . . . [3 pts] - passed
+SceneAssignmentOperator2 . . . . . . . [2 pts] - passed
+SceneChangeLayer . . . . . . . . . . . [3 pts] - passed
+SceneChangeLayerInvalid  . . . . . . . [2 pts] - passed
+SceneDrawScene . . . . . . . . . . . . [3 pts] - passed
+SceneDrawScene2  . . . . . . . . . . . [3 pts] - passed
+SceneDrawScene3  . . . . . . . . . . . [3 pts] - passed
+SceneDrawScene4  . . . . . . . . . . . [3 pts] - passed
+SceneDrawSceneChangeLayer  . . . . . . [2 pts] - passed
+SceneDrawSceneDeletePicture  . . . . . [2 pts] - passed
+SceneDrawSceneTranslate  . . . . . . . [2 pts] - passed
+SceneDrawSceneTranslate2 . . . . . . . [2 pts] - passed
+SceneTranslateInvalid  . . . . . . . . [2 pts] - passed
+SceneTranslateInvalid2 . . . . . . . . [1 pts] - passed
+SceneDeletePictureInvalid  . . . . . . [2 pts] - passed
+Valgrind2 (valgrind) . . . . . . . . . [5 pts] - passed
+Valgrind3 (valgrind) . . . . . . . . . [5 pts] - FAILED: testscene.cpp:453: Assertion (*black == firstScene->drawscene()) failed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 76
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+InvertColorsEven [8 points]
+Result: FAILED: testimage.cpp:103: Did not match solution
+Took 0ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Valgrind1 (run under valgrind) [5 points]
+Result: FAILED: testscene.cpp:74: Assertion (*theImage == *soln) failed
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running Valgrind1 [worth 5 points, output below]
+Result: FAILED:
+testscene.cpp:74: Assertion (*theImage == *soln) failed
+
+----------------------------------------------------------------
+SceneChangeMaxLayersLarger [3 points]
+Result: FAILED: Segmentation fault
+Took 18837920ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+index out of bounds
+invalid index
+
+----------------------------------------------------------------
+SceneChangeMaxLayersSmaller (run under valgrind) [1 points]
+Result: FAILED: Invalid read/write errors
+Took unknown time (2000ms timeout)
+Output:
+----------------------------------------------------------------
+Running SceneChangeMaxLayersSmaller [worth 1 points, output below]
+==27859== Invalid write of size 8
+==27859==    at 0x41DC11: Scene::addpicture(char const*, int, int, int) (scene.cpp:118)
+==27859==    by 0x40EEEC: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:151)
+==27859==    by 0x41292B: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==27859==    by 0x408501: proxy::test_execution::child_test() (testimage.cpp:870)
+==27859==    by 0x407F20: proxy::test_execution::child() (testimage.cpp:755)
+==27859==    by 0x4149B2: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==27859==    by 0x408385: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==27859==    by 0x40720A: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==27859==    by 0x407112: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==27859==    by 0x406F7A: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==27859==    by 0x406F2B: proxy::RunTests::execute() (testimage.cpp:535)
+==27859==    by 0x4066C7: main (testimage.cpp:425)
+==27859==  Address 0x4c83908 is 0 bytes after a block of size 8 alloc'd
+==27859==    at 0x4A0674C: operator new[](unsigned long) (vg_replace_malloc.c:305)
+==27859==    by 0x41DA4D: Scene::changemaxlayers(int) (scene.cpp:96)
+==27859==    by 0x40EECB: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==27859==    by 0x41292B: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==27859==    by 0x408501: proxy::test_execution::child_test() (testimage.cpp:870)
+==27859==    by 0x407F20: proxy::test_execution::child() (testimage.cpp:755)
+==27859==    by 0x4149B2: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==27859==    by 0x408385: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==27859==    by 0x40720A: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==27859==    by 0x407112: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==27859==    by 0x406F7A: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==27859==    by 0x406F2B: proxy::RunTests::execute() (testimage.cpp:535)
+==27859== 
+==27859== Invalid read of size 8
+==27859==    at 0x41D89F: Scene::clear() (scene.cpp:52)
+==27859==    by 0x41D965: Scene::~Scene() (scene.cpp:65)
+==27859==    by 0x40EF02: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:153)
+==27859==    by 0x41292B: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==27859==    by 0x408501: proxy::test_execution::child_test() (testimage.cpp:870)
+==27859==    by 0x407F20: proxy::test_execution::child() (testimage.cpp:755)
+==27859==    by 0x4149B2: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==27859==    by 0x408385: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==27859==    by 0x40720A: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==27859==    by 0x407112: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==27859==    by 0x406F7A: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==27859==    by 0x406F2B: proxy::RunTests::execute() (testimage.cpp:535)
+==27859==  Address 0x4c83908 is 0 bytes after a block of size 8 alloc'd
+==27859==    at 0x4A0674C: operator new[](unsigned long) (vg_replace_malloc.c:305)
+==27859==    by 0x41DA4D: Scene::changemaxlayers(int) (scene.cpp:96)
+==27859==    by 0x40EECB: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==27859==    by 0x41292B: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==27859==    by 0x408501: proxy::test_execution::child_test() (testimage.cpp:870)
+==27859==    by 0x407F20: proxy::test_execution::child() (testimage.cpp:755)
+==27859==    by 0x4149B2: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==27859==    by 0x408385: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==27859==    by 0x40720A: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==27859==    by 0x407112: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==27859==    by 0x406F7A: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==27859==    by 0x406F2B: proxy::RunTests::execute() (testimage.cpp:535)
+==27859== 
+Result: FAILED:
+Invalid read/write errors
+
+----------------------------------------------------------------
+SceneChangeMaxLayersInvalidChange [2 points]
+Result: FAILED: testscene.cpp:162: Assertion (*image == *red) failed
+Took 0ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+invalid newmax
+
+----------------------------------------------------------------
+Valgrind3 (run under valgrind) [5 points]
+Result: FAILED: testscene.cpp:453: Assertion (*black == firstScene->drawscene()) failed
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running Valgrind3 [worth 5 points, output below]
+==27886== 40,536 (32 direct, 40,504 indirect) bytes in 1 blocks are definitely lost in loss record 17 of 17
+==27886==    at 0x4A06C8E: operator new(unsigned long) (vg_replace_malloc.c:261)
+==27886==    by 0x411AB1: proxy_test::Valgrind3(util::sizedpipestream<512ul>&) (testscene.cpp:443)
+==27886==    by 0x41292B: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==27886==    by 0x408501: proxy::test_execution::child_test() (testimage.cpp:870)
+==27886==    by 0x407F20: proxy::test_execution::child() (testimage.cpp:755)
+==27886==    by 0x4149B2: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==27886==    by 0x408385: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==27886==    by 0x40720A: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==27886==    by 0x407112: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==27886==    by 0x406F7A: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==27886==    by 0x406F2B: proxy::RunTests::execute() (testimage.cpp:535)
+==27886==    by 0x4066C7: main (testimage.cpp:425)
+==27886== 
+index out of bounds
+invalid index
+invalid index
+Result: FAILED:
+testscene.cpp:453: Assertion (*black == firstScene->drawscene()) failed
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 76
+

@@ -1,0 +1,247 @@
+Monad Autograder
+Testing mp5.1 at 2014-03-22 01:41:00
+
+"Wat." ~ Chase Geigle
+
+Setting up test environment...
+Compiling...
+================================================================
+unit_tests.cpp: In function 'void proxy_test::test_ctor_1(util::pipestream&)':
+unit_tests.cpp:52: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_ctor_2(util::pipestream&)':
+unit_tests.cpp:59: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_buildTree_1(util::pipestream&)':
+unit_tests.cpp:67: error: 'class Quadtree' has no member named 'buildTree'
+unit_tests.cpp: In function 'void proxy_test::test_buildTree_2(util::pipestream&)':
+unit_tests.cpp:75: error: 'class Quadtree' has no member named 'buildTree'
+unit_tests.cpp: In function 'void proxy_test::test_buildTree_3(util::pipestream&)':
+unit_tests.cpp:83: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:84: error: 'class Quadtree' has no member named 'buildTree'
+unit_tests.cpp: In function 'void proxy_test::test_cctor_2(util::pipestream&)':
+unit_tests.cpp:98: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_cctor_3(util::pipestream&)':
+unit_tests.cpp:106: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_cctor_4(util::pipestream&)':
+unit_tests.cpp:115: error: new initializer expression list treated as compound expression
+unit_tests.cpp:115: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:119: error: new initializer expression list treated as compound expression
+unit_tests.cpp:119: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_assign_op_2(util::pipestream&)':
+unit_tests.cpp:137: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_assign_op_3(util::pipestream&)':
+unit_tests.cpp:147: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:148: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_assign_op_4(util::pipestream&)':
+unit_tests.cpp:158: error: new initializer expression list treated as compound expression
+unit_tests.cpp:158: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:159: error: new initializer expression list treated as compound expression
+unit_tests.cpp:159: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:163: error: new initializer expression list treated as compound expression
+unit_tests.cpp:163: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_1(util::pipestream&)':
+unit_tests.cpp:172: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:177: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_2(util::pipestream&)':
+unit_tests.cpp:183: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:188: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_3(util::pipestream&)':
+unit_tests.cpp:194: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:199: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_4(util::pipestream&)':
+unit_tests.cpp:205: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:210: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_1(util::pipestream&)':
+unit_tests.cpp:217: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:218: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_2(util::pipestream&)':
+unit_tests.cpp:225: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:226: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_3(util::pipestream&)':
+unit_tests.cpp:234: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:235: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_4(util::pipestream&)':
+unit_tests.cpp:242: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:243: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'Quadtree* tree_gen(size_t)':
+unit_tests.cpp:261: error: new initializer expression list treated as compound expression
+unit_tests.cpp:261: error: no matching function for call to 'Quadtree::Quadtree(size_t&)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'RGBAPixel time_getPixel(Quadtree*)':
+unit_tests.cpp:271: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void time_decompress(Quadtree*)':
+unit_tests.cpp:276: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::valgrind_big3(util::pipestream&)':
+unit_tests.cpp:306: error: new initializer expression list treated as compound expression
+unit_tests.cpp:306: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_ctor_1(util::pipestream&)':
+unit_tests.cpp:52: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_ctor_2(util::pipestream&)':
+unit_tests.cpp:59: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_buildTree_1(util::pipestream&)':
+unit_tests.cpp:67: error: 'class Quadtree' has no member named 'buildTree'
+unit_tests.cpp: In function 'void proxy_test::test_buildTree_2(util::pipestream&)':
+unit_tests.cpp:75: error: 'class Quadtree' has no member named 'buildTree'
+unit_tests.cpp: In function 'void proxy_test::test_buildTree_3(util::pipestream&)':
+unit_tests.cpp:83: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:84: error: 'class Quadtree' has no member named 'buildTree'
+unit_tests.cpp: In function 'void proxy_test::test_cctor_2(util::pipestream&)':
+unit_tests.cpp:98: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_cctor_3(util::pipestream&)':
+unit_tests.cpp:106: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_cctor_4(util::pipestream&)':
+unit_tests.cpp:115: error: new initializer expression list treated as compound expression
+unit_tests.cpp:115: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:119: error: new initializer expression list treated as compound expression
+unit_tests.cpp:119: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_assign_op_2(util::pipestream&)':
+unit_tests.cpp:137: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_assign_op_3(util::pipestream&)':
+unit_tests.cpp:147: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:148: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_assign_op_4(util::pipestream&)':
+unit_tests.cpp:158: error: new initializer expression list treated as compound expression
+unit_tests.cpp:158: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:159: error: new initializer expression list treated as compound expression
+unit_tests.cpp:159: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:163: error: new initializer expression list treated as compound expression
+unit_tests.cpp:163: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_1(util::pipestream&)':
+unit_tests.cpp:172: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:177: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_2(util::pipestream&)':
+unit_tests.cpp:183: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:188: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_3(util::pipestream&)':
+unit_tests.cpp:194: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:199: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_getPixel_4(util::pipestream&)':
+unit_tests.cpp:205: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:210: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_1(util::pipestream&)':
+unit_tests.cpp:217: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:218: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_2(util::pipestream&)':
+unit_tests.cpp:225: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:226: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_3(util::pipestream&)':
+unit_tests.cpp:234: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:235: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::test_decompress_unpruned_4(util::pipestream&)':
+unit_tests.cpp:242: error: no matching function for call to 'Quadtree::Quadtree(PNG&, int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp:243: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'Quadtree* tree_gen(size_t)':
+unit_tests.cpp:261: error: new initializer expression list treated as compound expression
+unit_tests.cpp:261: error: no matching function for call to 'Quadtree::Quadtree(size_t&)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+unit_tests.cpp: In function 'RGBAPixel time_getPixel(Quadtree*)':
+unit_tests.cpp:271: error: 'class Quadtree' has no member named 'getPixel'
+unit_tests.cpp: In function 'void time_decompress(Quadtree*)':
+unit_tests.cpp:276: error: 'class Quadtree' has no member named 'decompress'
+unit_tests.cpp: In function 'void proxy_test::valgrind_big3(util::pipestream&)':
+unit_tests.cpp:306: error: new initializer expression list treated as compound expression
+unit_tests.cpp:306: error: no matching function for call to 'Quadtree::Quadtree(int)'
+quadtree.h:17: note: candidates are: Quadtree::Quadtree()
+quadtree.h:17: note:                 Quadtree::Quadtree(const Quadtree&)
+ld: no input files
+g++: unit_tests.o: No such file or directory
+make: *** [proxy] Error 1
+
+
+exec("./proxy", "--nodetailed") failed: No such file or directory
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

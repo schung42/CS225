@@ -1,0 +1,36 @@
+Monad Autograder
+Testing mp7 at 2014-05-06 02:04:03
+
+"Be careful about using the following code -- I've only proven that it works, I haven't tested it." ~ Donald Knuth
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from maze.cpp:1:
+maze.h:29: error: ISO C++ forbids declaration of 'PNG' with no type
+maze.h:29: error: expected ';' before '*' token
+maze.h:33: error: ISO C++ forbids declaration of 'PNG' with no type
+maze.h:33: error: expected ';' before '*' token
+maze.cpp: In constructor 'SquareMaze::SquareMaze()':
+maze.cpp:14: error: 'cells' was not declared in this scope
+maze.cpp: In member function 'bool SquareMaze::canTravel(int, int, int) const':
+maze.cpp:26: warning: suggest parentheses around comparison in operand of '|'
+maze.cpp:37: error: expected primary-expression before ')' token
+maze.cpp: In member function 'std::vector<int, std::allocator<int> > SquareMaze::solveMaze()':
+maze.cpp:55: warning: no return statement in function returning non-void
+maze.cpp: At global scope:
+maze.cpp:57: error: expected constructor, destructor, or type conversion before '*' token
+maze.cpp:62: error: expected constructor, destructor, or type conversion before '*' token
+make: *** [maze.o] Error 1
+
+
+exec("./proxy", "--nodetailed") failed: No such file or directory
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

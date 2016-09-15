@@ -1,0 +1,26 @@
+Monad Autograder
+Testing mp2.1 at 2014-02-05 00:55:49
+
+"Now that's just math for math's sake." ~ Prof. Julia Hockenmaier
+
+Setting up test environment...
+cp: cannot stat `/dev/shm/geigle1/monad/sp14-cs225/schung42/mp2/scene.h': No such file or directory
+cp: cannot stat `/dev/shm/geigle1/monad/sp14-cs225/schung42/mp2/scene.cpp': No such file or directory
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+InvertColorsEven  . . [33 pts] - FAILED
+FlipLeftEven  . . . . [17 pts] - passed
+FlipLeftOdd . . . . . [17 pts] - passed
+AdjustBrightnessEven  [11 pts] - passed
+AdjustBrightnessEven2 [11 pts] - passed
+AdjustBrightnessEven3 [11 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 67
+

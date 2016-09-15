@@ -1,0 +1,148 @@
+Monad Autograder
+Testing mp7 at 2014-05-07 03:11:13
+
+"I would build pyramids, if I were Pharoah." ~ Kyle Johnson
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+addElements1  . . . . . . [5 pts] - passed
+addElements2  . . . . . . [5 pts] - passed
+testFindAndSetUnion1  . . [5 pts] - passed
+testFindAndSetUnion2  . . [5 pts] - passed
+testFindAndSetUnion3  . . [5 pts] - passed
+testMakeSmallMaze . . . . [5 pts] - FAILED: unit_tests.cpp:192: Maze is not connected
+testMakeMazeConnected . . [5 pts] - FAILED: unit_tests.cpp:181: Maze is not connected
+testMakeMazeAcyclic . . . [5 pts] - passed
+testMakeMazeTree1000  . . [5 pts] - FAILED: unit_tests.cpp:192: Maze is not connected
+testMakeMazeRandom  . . . [5 pts] - FAILED: unit_tests.cpp:314: Generated the same 50x50 maze twice
+testSolveMazeValidPath  . [5 pts] - FAILED: unit_tests.cpp:328: No solution was generated
+testSolutionBottomRow . . [5 pts] - FAILED: unit_tests.cpp:356: Didn't end up at the bottom row
+testSolutionCorrectSquare [5 pts] - FAILED: unit_tests.cpp:375: Didn't end up at the bottom row
+testSolveMazeSmall  . . . [5 pts] - FAILED: unit_tests.cpp:395: [solution.size() => 0] != [soln.getSolutionSize() => 3]
+testSolveMazeLarge  . . . [5 pts] - FAILED: unit_tests.cpp:395: [solution.size() => 0] != [soln.getSolutionSize() => 6768]
+testDrawMazeSmall . . . . [5 pts] - FAILED: unit_tests.cpp:415: Assertion (*actualOutput == solnImage) failed
+testDrawMazeMed . . . . . [5 pts] - FAILED: unit_tests.cpp:429: Assertion (*actualOutput == solnImage) failed
+testDrawMazeLarge . . . . [5 pts] - FAILED: unit_tests.cpp:443: Assertion (*actualOutput == solnImage) failed
+testDrawSolutionMed . . . [5 pts] - FAILED: unit_tests.cpp:458: Assertion (*actualOutput == solnImage) failed
+testDrawSolutionLarge . . [5 pts] - FAILED: unit_tests.cpp:473: Assertion (*actualOutput == solnImage) failed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 30
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+testMakeSmallMaze [5 points]
+Result: FAILED: unit_tests.cpp:192: Maze is not connected
+Took 0ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testMakeMazeConnected [5 points]
+Result: FAILED: unit_tests.cpp:181: Maze is not connected
+Took 0ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testMakeMazeTree1000 [5 points]
+Result: FAILED: unit_tests.cpp:192: Maze is not connected
+Took 3277ms (15000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testMakeMazeRandom [5 points]
+Result: FAILED: unit_tests.cpp:314: Generated the same 50x50 maze twice
+Took 11ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testSolveMazeValidPath [5 points]
+Result: FAILED: unit_tests.cpp:328: No solution was generated
+Took 1ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testSolutionBottomRow [5 points]
+Result: FAILED: unit_tests.cpp:356: Didn't end up at the bottom row
+Took 1ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testSolutionCorrectSquare [5 points]
+Result: FAILED: unit_tests.cpp:375: Didn't end up at the bottom row
+Took 1ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testSolveMazeSmall [5 points]
+Result: FAILED: unit_tests.cpp:395: [solution.size() => 0] != [soln.getSolutionSize() => 3]
+Took 0ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+first 10 steps in solution:
+
+----------------------------------------------------------------
+testSolveMazeLarge [5 points]
+Result: FAILED: unit_tests.cpp:395: [solution.size() => 0] != [soln.getSolutionSize() => 6768]
+Took 3822ms (15000ms timeout)
+Output:
+----------------------------------------------------------------
+first 10 steps in solution:
+
+----------------------------------------------------------------
+testDrawMazeSmall [5 points]
+Result: FAILED: unit_tests.cpp:415: Assertion (*actualOutput == solnImage) failed
+Took 0ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testDrawMazeMed [5 points]
+Result: FAILED: unit_tests.cpp:429: Assertion (*actualOutput == solnImage) failed
+Took 55ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testDrawMazeLarge [5 points]
+Result: FAILED: unit_tests.cpp:443: Assertion (*actualOutput == solnImage) failed
+Took 5681ms (15000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testDrawSolutionMed [5 points]
+Result: FAILED: unit_tests.cpp:458: Assertion (*actualOutput == solnImage) failed
+Took 55ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testDrawSolutionLarge [5 points]
+Result: FAILED: unit_tests.cpp:473: Assertion (*actualOutput == solnImage) failed
+Took 5777ms (15000ms timeout)
+Output:
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 30
+

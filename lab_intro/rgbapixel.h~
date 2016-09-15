@@ -1,0 +1,20 @@
+#ifndef RGBAPIXEL_H
+#define RGBAPIXEL_H
+
+#include <ostream>
+
+class RGBAPixel
+{
+	public:
+
+		unsigned char red, green, blue, alpha;
+			
+		RGBAPixel();
+
+		RGBAPixel(unsigned char red, unsigned char green, unsigned char blue);
+
+		
+};
+
+
+#endif
